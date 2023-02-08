@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        label{
+            display:inline-block ;
+            padding: 10px 10px 10px 0;
+        }
+        input,select{
+            width: 100%;
+            padding: 10px;
+            border: 2px solid orange;
+           resize:vertical;
+        }
+        button{
+            background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border:1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 30%;
+  margin-top: 40px;
+        }
+        .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin:5% 25%  ;
+}
+button:hover{
+    background-color: blue;
+}
+@media screen and (max-width: 600px) {
+  button, input {
+    width: 100%;
+    margin-top: 0;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="reg.php" method="post">
+  <h1 align="center">REGISTER HERE</h1>
+    <label>first name</label>
+    <input type="text" name="fname" placeholder="first name" required>
+    <label>last name</label>
+     <input type="text" name="lname" placeholder="lastname name" required>
+     <label>password</label>
+      <input type="text" name="pass" placeholder="password" required>
+      <label>county of residence</label>
+      <select name="county">
+        <option value="Nyeri">Nyeri</option>
+        <option value="Nairobi">Nairobi</option>
+        <option value="Kirinyaga">Kirinyaga</option>
+      </select>
+      <button>register</button>
+      </form>
+      </div>
+</body>
+</html>
